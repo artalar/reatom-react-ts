@@ -1,13 +1,23 @@
-## Running React on Repl.it
+## Reatom template
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+Reatom, Vite, TypeScript, React.
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+- [CodeSandbox](https://codesandbox.io/s/github/artalar/reatom-react-ts)
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+- [StackBlitz](https://githubblitz.com/artalar/reatom-react-ts)
 
-### Getting Started
-- Hit run
-- Edit [App.tsx](#src/App.tsx) and watch it live update!
+- [Gitpod](https://gitpod.io/#https://github.com/artalar/reatom-react-ts)
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
+- [Repl.it](https://repl.it/github/artalar/reatom-react-ts)
+
+- [Glitch](https://glitch.com/edit/#!/import/github/artalar/reatom-react-ts)
+
+- [Sourcegraph](https://sourcegraph.com/github.com/artalar/reatom-react-ts)
+
+- [GitHub1s](https://github1s.com/artalar/reatom-react-ts)
+
+- [GitHub Dev](https://github.dev/artalar/reatom-react-ts)
+
+- [VSCode Dev](https://vscode.dev/github/artalar/reatom-react-ts)
+
+- [Clone in VSCode](vscode://vscode.git/clone?url=https://github.com/artalar/reatom-react-ts)

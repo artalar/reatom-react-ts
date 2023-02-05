@@ -20,4 +20,3 @@ Reatom, Vite, TypeScript, React.
 
 - [VSCode Dev](https://vscode.dev/github/artalar/reatom-react-ts)
 
-- [Clone in VSCode](vscode://vscode.git/clone?url=https://github.com/artalar/reatom-react-ts)

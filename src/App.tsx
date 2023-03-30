@@ -8,7 +8,7 @@ const inputAtom = atom('', 'inputAtom')
 // computed readonly atom
 const greetingAtom = atom((ctx) => {
   const input = ctx.spy(inputAtom)
-  return input ? `Hello, ${input}!` : ''
+  return input === '' ? `Hello, ${input}!` : ''
 }, 'greetingAtom')
 
 // a logic container
@@ -17,7 +17,11 @@ const onSubmit = action((ctx) => {
 
   // side-effects should be scheduled
   // you could do it anywhere with `ctx`
-  ctx.schedule(() => alert(greeting))
+  ctx
+    .schedule(() => {
+      alert(greeting)
+    })
+    .catch(() => {})
 }, 'onSubmit')
 
 export default function App() {

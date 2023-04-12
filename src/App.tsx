@@ -8,7 +8,7 @@ const inputAtom = atom('', 'inputAtom')
 // computed readonly atom
 const greetingAtom = atom((ctx) => {
   const input = ctx.spy(inputAtom)
-  return input === '' ? `Hello, ${input}!` : ''
+  return input === '' ? '' : `Hello, ${input}!`
 }, 'greetingAtom')
 
 // a logic container

@@ -1,0 +1,19 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: monospace;
+}
+
+button.logout {
+  margin: 0 0.5em;
+  font-family: monospace;
+  line-height: 1em;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+}

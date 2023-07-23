@@ -1,12 +1,9 @@
 import { action, atom } from '@reatom/framework'
 import { useAction, useAtom } from '@reatom/npm-react'
-import { historyAtom } from '@reatom/npm-history'
-import { usernameAtom } from '~/model'
+import { usernameAtom } from '~/features/model'
 
-// base mutable atom
 const inputAtom = atom('', 'inputAtom')
 
-// computed readonly atom
 const greetingAtom = atom((ctx) => {
   const input = ctx.spy(inputAtom)
   return input === '' ? '' : `Hello, ${input}!`
@@ -14,11 +11,11 @@ const greetingAtom = atom((ctx) => {
 
 // a logic container
 const onSubmit = action((ctx, event: React.FormEvent<HTMLFormElement>) => {
-  event.preventDefault()
+  void ctx.schedule(() => {
+    event.preventDefault()
+  })
 
   usernameAtom(ctx, ctx.get(inputAtom))
-
-  historyAtom.push(ctx, '/search')
 }, 'onSubmit')
 
 export const Login = () => {

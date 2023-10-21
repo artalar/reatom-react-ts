@@ -1,8 +1,26 @@
-// this is the most common model for the whole app
-
-import { atom } from '@reatom/framework'
+import { action, atom } from '@reatom/framework'
 import { withLocalStorage } from '@reatom/persist-web-storage'
+import { urlAtom, withSearchParamsPersist } from '@reatom/url'
 
-export const usernameAtom = atom('', 'usernameAtom').pipe(
-  withLocalStorage('USER'),
+export const nameAtom = atom('', 'nameAtom').pipe(
+  withSearchParamsPersist('name'),
 )
+export const greetingAtom = atom(
+  (ctx) => (ctx.spy(nameAtom) ? `Hello, ${ctx.spy(nameAtom)}!` : ''),
+  'greetingAtom',
+)
+
+export const isLoggedAtom = atom(true, 'isLoggedAtom').pipe(
+  withLocalStorage('isLogged'),
+)
+
+export const login = action((ctx, event: React.FormEvent<HTMLFormElement>) => {
+  event.preventDefault()
+  isLoggedAtom(ctx, true)
+  urlAtom.go(ctx, '/home')
+}, 'login')
+
+export const logout = action((ctx) => {
+  isLoggedAtom(ctx, false)
+  urlAtom.go(ctx, '/')
+}, 'logout')

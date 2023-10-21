@@ -1,10 +1,10 @@
 import { reatomComponent } from '@reatom/npm-react'
 
-export const Home = reatomComponent(
+export const Profile = reatomComponent(
   () => (
     <section>
-      <header>Home</header>
+      <header>Profile</header>
     </section>
   ),
-  'Home',
+  'Profile',
 )

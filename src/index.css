@@ -1,4 +1,4 @@
-.login {
+.auth {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,13 +7,16 @@
   font-family: monospace;
 }
 
-button.logout {
-  margin: 0 0.5em;
-  font-family: monospace;
-  line-height: 1em;
+.head {
+  display: flex;
 }
 
-header {
+.head nav ul {
   display: flex;
-  justify-content: end;
+  gap: 2em;
+}
+
+.logout {
+  height: 2em;
+  margin-left: auto;
 }

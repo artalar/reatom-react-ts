@@ -4,11 +4,11 @@ Tech stack: Vite, TypeScript, React, **Reatom**.
 
 ## Sanboxes
 
-- [Gitpod](https://gitpod.io/#https://github.com/artalar/reatom-react-ts)
-
-- [CodeSandbox](https://codesandbox.io/s/github/artalar/reatom-react-ts)
+- [CodeSandbox](https://codesandbox.io/p/sandbox/github/artalar/reatom-react-ts/tree/main)
 
 - [StackBlitz](https://githubblitz.com/artalar/reatom-react-ts)
+
+- [Gitpod](https://gitpod.io/#https://github.com/artalar/reatom-react-ts)
 
 - [Repl.it](https://repl.it/github/artalar/reatom-react-ts)
 
